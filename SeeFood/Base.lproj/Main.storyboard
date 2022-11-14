@@ -1,24 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gFn-q3-Rr2">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SeeFood-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SeeFood" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="moR-wp-yby">
+                                <rect key="frame" x="20" y="1276" width="984" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="OrO-0P-rwx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.97254901959999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotdog" translatesAutoresizingMaskIntoConstraints="NO" id="oV2-6W-8nd">
+                                <rect key="frame" x="467" y="1186" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="E8h-Va-jjc"/>
+                                    <constraint firstAttribute="height" constant="90" id="tkG-WI-yOn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notHotDog" translatesAutoresizingMaskIntoConstraints="NO" id="t7r-Cj-SbP">
+                                <rect key="frame" x="467" y="1186" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="ct5-QA-fCP"/>
+                                    <constraint firstAttribute="width" constant="90" id="o2q-FV-gax"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotdog" translatesAutoresizingMaskIntoConstraints="NO" id="d9p-fZ-QYM">
+                                <rect key="frame" x="10" y="94" width="1004" height="1062"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d9p-fZ-QYM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="5tE-qs-NBC"/>
+                            <constraint firstItem="d9p-fZ-QYM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DzT-cE-DdT"/>
+                            <constraint firstItem="moR-wp-yby" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZR-I4-2yZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="moR-wp-yby" secondAttribute="trailing" constant="20" id="K6B-cu-Vm8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d9p-fZ-QYM" secondAttribute="trailing" constant="10" id="TRv-tW-gtZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="moR-wp-yby" secondAttribute="bottom" constant="20" id="b3J-m1-wLo"/>
+                            <constraint firstItem="oV2-6W-8nd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="clS-gC-guj"/>
+                            <constraint firstItem="moR-wp-yby" firstAttribute="top" secondItem="t7r-Cj-SbP" secondAttribute="bottom" id="gxl-Ix-hcV"/>
+                            <constraint firstItem="moR-wp-yby" firstAttribute="top" secondItem="oV2-6W-8nd" secondAttribute="bottom" id="lJb-Rc-KMe"/>
+                            <constraint firstItem="oV2-6W-8nd" firstAttribute="top" secondItem="d9p-fZ-QYM" secondAttribute="bottom" constant="30" id="ssy-bE-Crv"/>
+                            <constraint firstItem="t7r-Cj-SbP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yys-gD-FGk"/>
+                            <constraint firstItem="moR-wp-yby" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zt0-TE-aVA"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="SeeFood" largeTitleDisplayMode="always" id="GxP-C2-Ngg">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="n6V-Cz-EXM">
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="ikp-kg-zLz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="hotdog" destination="oV2-6W-8nd" id="dlW-Dl-mqv"/>
+                        <outlet property="imageView" destination="d9p-fZ-QYM" id="pWx-5n-xj8"/>
+                        <outlet property="label" destination="moR-wp-yby" id="Mfq-4T-56p"/>
+                        <outlet property="notHotDog" destination="t7r-Cj-SbP" id="Avr-tf-1As"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1028.2442748091603" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VHJ-Vp-D4r">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gFn-q3-Rr2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vCE-59-pvn">
+                        <rect key="frame" x="0.0" y="24" width="1024" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="uxB-W4-e3Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xkF-ve-BMf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hotdog" width="800" height="800"/>
+        <image name="notHotDog" width="1024" height="1024"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
